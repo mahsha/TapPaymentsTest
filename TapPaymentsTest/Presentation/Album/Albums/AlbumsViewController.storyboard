@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,14 +17,14 @@
                         <viewControllerLayoutGuide type="bottom" id="mCL-hP-e0s"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qFq-Gf-WGm">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibA-ie-uvt">
-                                <rect key="frame" x="0.0" y="44" width="428" height="767"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="467"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lP0-ud-s5c">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="767"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="467"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </scrollView>
                                 </subviews>
@@ -36,7 +37,7 @@
                                 </constraints>
                             </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mWX-UR-gFE">
-                                <rect key="frame" x="157.66666666666666" y="811" width="112.99999999999997" height="25"/>
+                                <rect key="frame" x="102.5" y="467" width="115.5" height="25"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -44,7 +45,7 @@
                                 </constraints>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFe-gV-oP8">
-                                <rect key="frame" x="24" y="846" width="380" height="46"/>
+                                <rect key="frame" x="24" y="502" width="272" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="0.58039215690000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="cSh-vi-2Kh"/>
@@ -60,7 +61,7 @@
                         <constraints>
                             <constraint firstItem="mWX-UR-gFE" firstAttribute="centerX" secondItem="qFq-Gf-WGm" secondAttribute="centerX" id="Bc9-jb-piH"/>
                             <constraint firstItem="ibA-ie-uvt" firstAttribute="top" secondItem="cWM-Es-2ga" secondAttribute="bottom" id="HWM-Sz-hVe"/>
-                            <constraint firstItem="mCL-hP-e0s" firstAttribute="top" secondItem="yFe-gV-oP8" secondAttribute="bottom" id="R7t-Ri-gjb"/>
+                            <constraint firstItem="mCL-hP-e0s" firstAttribute="top" secondItem="yFe-gV-oP8" secondAttribute="bottom" constant="20" id="R7t-Ri-gjb"/>
                             <constraint firstItem="yFe-gV-oP8" firstAttribute="top" secondItem="mWX-UR-gFE" secondAttribute="bottom" constant="10" id="ZJa-DT-5gW"/>
                             <constraint firstAttribute="trailing" secondItem="ibA-ie-uvt" secondAttribute="trailing" id="dmC-D0-wbV"/>
                             <constraint firstItem="yFe-gV-oP8" firstAttribute="leading" secondItem="qFq-Gf-WGm" secondAttribute="leading" constant="24" id="nQN-iy-5fj"/>
