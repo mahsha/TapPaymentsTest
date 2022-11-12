@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Albums View Controller-->
+        <scene sceneID="0Tn-4V-pMz">
+            <objects>
+                <viewController storyboardIdentifier="AlbumsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UWh-Xb-FRQ" customClass="AlbumsViewController" customModule="TapPaymentsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cWM-Es-2ga"/>
+                        <viewControllerLayoutGuide type="bottom" id="mCL-hP-e0s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qFq-Gf-WGm">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibA-ie-uvt">
+                                <rect key="frame" x="0.0" y="44" width="428" height="767"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lP0-ud-s5c">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="767"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="lP0-ud-s5c" firstAttribute="top" secondItem="ibA-ie-uvt" secondAttribute="top" id="1r5-8e-HwR"/>
+                                    <constraint firstAttribute="bottom" secondItem="lP0-ud-s5c" secondAttribute="bottom" id="bj0-nt-yps"/>
+                                    <constraint firstAttribute="trailing" secondItem="lP0-ud-s5c" secondAttribute="trailing" id="hnU-Oa-Zj5"/>
+                                    <constraint firstItem="lP0-ud-s5c" firstAttribute="leading" secondItem="ibA-ie-uvt" secondAttribute="leading" id="oaa-Hw-VJz"/>
+                                </constraints>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mWX-UR-gFE">
+                                <rect key="frame" x="157.66666666666666" y="811" width="112.99999999999997" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Qn4-eB-usa"/>
+                                </constraints>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFe-gV-oP8">
+                                <rect key="frame" x="24" y="846" width="380" height="46"/>
+                                <color key="backgroundColor" red="0.0" green="0.58039215690000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="cSh-vi-2Kh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Show" cornerStyle="medium"/>
+                                <connections>
+                                    <action selector="showItem:" destination="UWh-Xb-FRQ" eventType="touchUpInside" id="UEr-dq-ydI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mWX-UR-gFE" firstAttribute="centerX" secondItem="qFq-Gf-WGm" secondAttribute="centerX" id="Bc9-jb-piH"/>
+                            <constraint firstItem="ibA-ie-uvt" firstAttribute="top" secondItem="cWM-Es-2ga" secondAttribute="bottom" id="HWM-Sz-hVe"/>
+                            <constraint firstItem="mCL-hP-e0s" firstAttribute="top" secondItem="yFe-gV-oP8" secondAttribute="bottom" id="R7t-Ri-gjb"/>
+                            <constraint firstItem="yFe-gV-oP8" firstAttribute="top" secondItem="mWX-UR-gFE" secondAttribute="bottom" constant="10" id="ZJa-DT-5gW"/>
+                            <constraint firstAttribute="trailing" secondItem="ibA-ie-uvt" secondAttribute="trailing" id="dmC-D0-wbV"/>
+                            <constraint firstItem="yFe-gV-oP8" firstAttribute="leading" secondItem="qFq-Gf-WGm" secondAttribute="leading" constant="24" id="nQN-iy-5fj"/>
+                            <constraint firstItem="ibA-ie-uvt" firstAttribute="leading" secondItem="qFq-Gf-WGm" secondAttribute="leading" id="nUq-c4-DQd"/>
+                            <constraint firstAttribute="trailing" secondItem="yFe-gV-oP8" secondAttribute="trailing" constant="24" id="q34-8Q-QlY"/>
+                            <constraint firstItem="mWX-UR-gFE" firstAttribute="top" secondItem="ibA-ie-uvt" secondAttribute="bottom" id="vVw-EX-MFo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="container" destination="ibA-ie-uvt" id="wv6-MW-z5y"/>
+                        <outlet property="pageControl" destination="mWX-UR-gFE" id="PLf-Ip-712"/>
+                        <outlet property="scrollview" destination="lP0-ud-s5c" id="TPv-L9-oPO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ekg-7Y-Ccg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490.65420560747663" y="92.656587473002162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
